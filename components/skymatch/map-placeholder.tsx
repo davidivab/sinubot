@@ -65,11 +65,10 @@ export function MapPlaceholder({
         className
       )}
     >
-      {/* Satellite background image */}
+      {/* Satellite background - gradient placeholder */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-300"
+        className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-green-800 to-teal-900 transition-transform duration-300"
         style={{
-          backgroundImage: "url('/images/bogota-satellite.jpg')",
           transform: `scale(${zoom})`,
         }}
       />
