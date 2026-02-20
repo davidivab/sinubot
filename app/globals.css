@@ -1,0 +1,198 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* ── Background & Foreground ── */
+  --background: #f9fafb;
+  --foreground: #111827;
+
+  /* ── Card ── */
+  --card: #ffffff;
+  --card-foreground: #111827;
+
+  /* ── Popover ── */
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+
+  /* ── Primary (Rojo Bogota) ── */
+  --primary: #ef4444;
+  --primary-foreground: #ffffff;
+
+  /* ── Secondary (Azul Institucional) ── */
+  --secondary: #3b82f6;
+  --secondary-foreground: #ffffff;
+
+  /* ── Muted ── */
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+
+  /* ── Accent ── */
+  --accent: #eff6ff;
+  --accent-foreground: #1e40af;
+
+  /* ── Destructive ── */
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  /* ── Border / Input / Ring ── */
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #ef4444;
+
+  /* ── Chart palette ── */
+  --chart-1: #ef4444;
+  --chart-2: #3b82f6;
+  --chart-3: #22c55e;
+  --chart-4: #f59e0b;
+  --chart-5: #0ea5e9;
+
+  /* ── Radius ── */
+  --radius: 0.375rem;
+
+  /* ── Sidebar ── */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #111827;
+  --sidebar-primary: #ef4444;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fef2f2;
+  --sidebar-accent-foreground: #991b1b;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #ef4444;
+
+  /* ── Extended: Status colors ── */
+  --success: #22c55e;
+  --success-foreground: #ffffff;
+  --warning: #f59e0b;
+  --warning-foreground: #ffffff;
+  --info: #0ea5e9;
+  --info-foreground: #ffffff;
+
+  /* ── Extended: Role colors ── */
+  --role-morador: #8b5cf6;
+  --role-empresario: #059669;
+  --role-sdp: #dc2626;
+}
+
+.dark {
+  --background: #111827;
+  --foreground: #f9fafb;
+
+  --card: #1f2937;
+  --card-foreground: #f9fafb;
+
+  --popover: #1f2937;
+  --popover-foreground: #f9fafb;
+
+  --primary: #f87171;
+  --primary-foreground: #7f1d1d;
+
+  --secondary: #60a5fa;
+  --secondary-foreground: #1e3a8a;
+
+  --muted: #374151;
+  --muted-foreground: #9ca3af;
+
+  --accent: #1e3a8a;
+  --accent-foreground: #dbeafe;
+
+  --destructive: #f87171;
+  --destructive-foreground: #7f1d1d;
+
+  --border: #374151;
+  --input: #374151;
+  --ring: #f87171;
+
+  --chart-1: #f87171;
+  --chart-2: #60a5fa;
+  --chart-3: #4ade80;
+  --chart-4: #fbbf24;
+  --chart-5: #38bdf8;
+
+  --sidebar: #1f2937;
+  --sidebar-foreground: #f9fafb;
+  --sidebar-primary: #f87171;
+  --sidebar-primary-foreground: #7f1d1d;
+  --sidebar-accent: #374151;
+  --sidebar-accent-foreground: #fecaca;
+  --sidebar-border: #374151;
+  --sidebar-ring: #f87171;
+
+  --success: #4ade80;
+  --success-foreground: #14532d;
+  --warning: #fbbf24;
+  --warning-foreground: #78350f;
+  --info: #38bdf8;
+  --info-foreground: #0c4a6e;
+
+  --role-morador: #a78bfa;
+  --role-empresario: #34d399;
+  --role-sdp: #f87171;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-display: var(--font-poppins), 'Poppins', 'Inter', sans-serif;
+  --font-mono: var(--font-jetbrains-mono), 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+
+  --color-role-morador: var(--role-morador);
+  --color-role-empresario: var(--role-empresario);
+  --color-role-sdp: var(--role-sdp);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
