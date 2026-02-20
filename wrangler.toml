@@ -2,3 +2,9 @@ name = "sinubot"
 compatibility_date = "2026-02-20"
 pages_build_output_dir = ".vercel/output/static"
 
+[build]
+command = "pnpm build && npx @cloudflare/next-on-pages"
+
+[env.production]
+vars = { NODE_ENV = "production" }
+
