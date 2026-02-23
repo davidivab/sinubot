@@ -1,28 +1,31 @@
 import type { UserRole } from "./types"
 
 // ─── Sidebar Navigation per Role ────────────────────────────────
+// IMPORTANTE: Cada rol tiene rutas completamente separadas para evitar conflictos
 export const sidebarNav: Record<UserRole, { label: string; href: string; icon: string; badge?: number }[]> = {
   morador: [
-    { label: "Dashboard", href: "/dashboard", icon: "LayoutDashboard" },
-    { label: "Mis Predios", href: "/predios/nuevo", icon: "Building2" },
-    { label: "Caracterizacion", href: "/caracterizacion", icon: "ClipboardList" },
-    { label: "Mapa Social", href: "/mapa", icon: "Map" },
-    { label: "Mi Perfil", href: "/perfil", icon: "User" },
-    { label: "Configuracion", href: "/configuracion", icon: "Settings" },
+    { label: "Dashboard", href: "/morador/dashboard", icon: "LayoutDashboard" },
+    { label: "Mis Predios", href: "/morador/predios", icon: "Building2" },
+    { label: "Caracterización", href: "/morador/caracterizacion", icon: "ClipboardList" },
+    { label: "Mapa Social", href: "/morador/mapa", icon: "Map" },
+    { label: "Mi Perfil", href: "/morador/perfil", icon: "User" },
+    { label: "Configuración", href: "/morador/configuracion", icon: "Settings" },
   ],
   empresario: [
     { label: "Dashboard", href: "/empresario/dashboard", icon: "LayoutDashboard" },
-    { label: "Escenarios", href: "/empresario/escenarios/nuevo", icon: "FolderOpen" },
-    { label: "Mapa ZIDA", href: "/mapa", icon: "Map" },
-    { label: "Mi Perfil", href: "/perfil", icon: "User" },
-    { label: "Configuracion", href: "/configuracion", icon: "Settings" },
+    { label: "Búsqueda", href: "/empresario/busqueda", icon: "Map" },
+    { label: "Escenarios", href: "/empresario/escenarios", icon: "FolderOpen" },
+    { label: "Oportunidades", href: "/empresario/oportunidades", icon: "Building2" },
+    { label: "Mi Perfil", href: "/empresario/perfil", icon: "User" },
+    { label: "Configuración", href: "/empresario/configuracion", icon: "Settings" },
   ],
   sdp: [
     { label: "Dashboard", href: "/sdp/dashboard", icon: "LayoutDashboard" },
     { label: "Usuarios", href: "/sdp/usuarios", icon: "Users" },
-    { label: "Escenarios", href: "/sdp/escenarios/s1", icon: "FolderOpen", badge: 2 },
-    { label: "Mi Perfil", href: "/perfil", icon: "User" },
-    { label: "Configuracion", href: "/configuracion", icon: "Settings" },
+    { label: "Escenarios", href: "/sdp/escenarios", icon: "FolderOpen", badge: 2 },
+    { label: "Reportes", href: "/sdp/reportes", icon: "ClipboardList" },
+    { label: "Mi Perfil", href: "/sdp/perfil", icon: "User" },
+    { label: "Configuración", href: "/sdp/configuracion", icon: "Settings" },
   ],
 }
 

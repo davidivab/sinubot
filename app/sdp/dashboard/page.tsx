@@ -226,12 +226,12 @@ export default function SDPDashboard() {
                     icon: <UserPlus className="h-4 w-4" />,
                   },
                   {
-                    href: "/sdp/escenarios/s1",
+                    href: "/sdp/escenarios",
                     label: "Revisar Escenarios",
                     icon: <FileCheck className="h-4 w-4" />,
                   },
                   {
-                    href: "/mapa",
+                    href: "/sdp/mapa",
                     label: "Mapa ZIDA",
                     icon: <Eye className="h-4 w-4" />,
                   },

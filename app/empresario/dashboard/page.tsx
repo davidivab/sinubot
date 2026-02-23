@@ -134,7 +134,7 @@ export default function EmpresarioDashboard() {
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
                 <Link
-                  href="/mapa"
+                  href="/empresario/mapa"
                   className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
                 >
                   <Eye className="h-4 w-4" />

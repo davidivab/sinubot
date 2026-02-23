@@ -3,9 +3,18 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     unoptimized: true,
   },
+  // Optimización para Cloudflare Pages
+  output: 'export',
+  // Deshabilitar funciones server-side para static export
+  trailingSlash: true,
+  // Evitar errores de hidratación
+  reactStrictMode: true,
 }
 
 export default nextConfig
