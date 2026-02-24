@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "preview": "npx serve@latest out",
-    "deploy": "wrangler pages deploy out --project-name=skymatch-demo",
+    "pages:deploy": "echo 'Deployment handled by Cloudflare Pages automatically'",
     "cf:build": "npm run build",
     "cf:dev": "wrangler pages dev out --compatibility-date=2026-02-20"
   },
