@@ -407,3 +407,7 @@ export const mapMarkers: {
   { id: "p5", label: "AAA-0005-RSTU", intention: "no_definido", x: 42, y: 72, lotWidth: 3.8, lotHeight: 2.9, areaMt2: 95  },
   { id: "p6", label: "AAA-0006-VWXY", intention: "asociarse",   x: 75, y: 58, lotWidth: 5.0, lotHeight: 4.0, areaMt2: 175 },
 ]
+
+// ─── Social Characterization Data ──────────────────────────────
+export { mockSocialCharacterizations, socialCharacterizationStats } from "./social-characterization-data"
+

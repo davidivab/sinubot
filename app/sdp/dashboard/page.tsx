@@ -8,6 +8,7 @@ import {
   UserPlus,
   FileCheck,
   AlertTriangle,
+  BarChart3,
 } from "lucide-react"
 import { AppShell } from "@/components/skymatch/app-shell"
 import { StatCard } from "@/components/skymatch/stat-card"
@@ -220,6 +221,11 @@ export default function SDPDashboard() {
               </CardHeader>
               <CardContent className="space-y-2">
                 {[
+                  {
+                    href: "/sdp/analisis-social",
+                    label: "Análisis Social",
+                    icon: <BarChart3 className="h-4 w-4" />,
+                  },
                   {
                     href: "/sdp/usuarios",
                     label: "Gestion de Usuarios",
