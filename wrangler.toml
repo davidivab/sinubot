@@ -1,11 +1,6 @@
 name = "skymatch-demo"
 compatibility_date = "2026-02-20"
-compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "out"
-
-# Cloudflare Pages configuration
-[build]
-command = "npm run build"
 
 [env.production]
 vars = { NODE_ENV = "production" }
