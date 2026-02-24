@@ -19,7 +19,7 @@ import { currentMorador, mockProperties } from "@/lib/mock-data"
 import { intentionConfig } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 
-const moradorProperties = mockProperties.filter((p) => p.moradorId === "u1")
+const moradorProperties = mockProperties.filter((p) => p.moradorId === currentMorador.id)
 
 export default function MoradorPrediosPage() {
   return (

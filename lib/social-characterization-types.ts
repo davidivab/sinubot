@@ -152,14 +152,14 @@ export interface SocialCharacterization {
 
   // Sección 4.2: Factores motivadores
   factoresMotivadores: {
-    cercania Red Apoyo: LikertImportance5 | "No responde"
+    cercaniaRedApoyo: LikertImportance5 | "No responde"
     mejorarIngresos: LikertImportance5 | "No responde"
     mejorarCalidadVivienda: LikertImportance5 | "No responde"
     claridadJuridica: LikertImportance5 | "No responde"
     actividadesEconomicas: LikertImportance5 | "No responde"
   }
 
-  // Sección 4.3: Actitudes frente al cambio
+  // Sección 4.3: Act itudes frente al cambio
   actitudesCambio: {
     prefiereNadaCambie: LikertAgreement5 | "No responde"
     dispuestoConsiderarCambios: LikertAgreement5 | "No responde"

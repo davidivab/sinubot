@@ -9,6 +9,7 @@ import {
   FileCheck,
   AlertTriangle,
   BarChart3,
+  Database,
 } from "lucide-react"
 import { AppShell } from "@/components/skymatch/app-shell"
 import { StatCard } from "@/components/skymatch/stat-card"
@@ -221,6 +222,11 @@ export default function SDPDashboard() {
               </CardHeader>
               <CardContent className="space-y-2">
                 {[
+                  {
+                    href: "/sdp/caracterizaciones",
+                    label: "Base de Datos",
+                    icon: <Database className="h-4 w-4" />,
+                  },
                   {
                     href: "/sdp/analisis-social",
                     label: "Análisis Social",

@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Plus, Eye, ArrowRight, BarChart3 } from "lucide-react"
+import { Plus, Eye, ArrowRight, BarChart3, Database } from "lucide-react"
 import { AppShell } from "@/components/skymatch/app-shell"
 import { StatCard } from "@/components/skymatch/stat-card"
 import { BreadcrumbsNav } from "@/components/skymatch/breadcrumbs-nav"
@@ -125,6 +125,14 @@ export default function EmpresarioDashboard() {
                 <CardTitle className="text-sm font-semibold">Acciones rapidas</CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
+                <Link
+                  href="/empresario/caracterizaciones"
+                  className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+                >
+                  <Database className="h-4 w-4" />
+                  <span className="flex-1">Base de Datos</span>
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
                 <Link
                   href="/empresario/analisis-predios"
                   className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
